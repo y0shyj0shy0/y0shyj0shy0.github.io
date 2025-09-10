@@ -146,15 +146,14 @@ nav {
 }
 
 .about-image {
+    display: inline-block; /* div 크기를 내용물에 맞춤 */
     background: linear-gradient(45deg, #667eea, #764ba2);
     border-radius: 20px;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 600;
+    padding: 0; /* 여백 제거 */
+}
+.about-image img {
+    display: block; /* 이미지 아래 여백 제거 */
+    border-radius: 20px; /* div 모서리와 동일하게 */
 }
 
 /* Projects Section */
