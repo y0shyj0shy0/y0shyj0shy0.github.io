@@ -160,7 +160,191 @@ nav {
     width: auto;         /* 비율 유지 */
 }
 
+/* Education Section */
+.education {
+    padding: 100px 0;
+}
 
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: #e2e8f0;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background: #2563eb;
+    border-radius: 50%;
+    top: 1.5rem;
+    z-index: 2;
+}
+
+.timeline-date {
+    flex: 0 0 45%;
+    text-align: right;
+    padding-right: 2rem;
+    font-weight: 600;
+    color: #2563eb;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    align-self: flex-start;
+    margin-top: 1.5rem;
+}
+
+.timeline-content {
+    flex: 0 0 45%;
+    padding-left: 2rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    font-size: 1.3rem;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content h4 {
+    font-size: 1.1rem;
+    color: #2563eb;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.timeline-content p {
+    color: #64748b;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* Achievements Section */
+.achievements {
+    padding: 100px 0;
+    background: #f8fafc;
+}
+
+.achievements-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    color: #1e293b;
+}
+
+.awards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.award-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #2563eb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.award-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.award-year {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.award-card h3 {
+    font-size: 1.2rem;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.award-card h4 {
+    font-size: 1rem;
+    color: #2563eb;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.award-card p {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.cert-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #10b981;
+}
+
+.cert-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cert-card h3 {
+    font-size: 1.1rem;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.cert-issuer {
+    color: #10b981;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.cert-date {
+    color: #64748b;
+    font-size: 0.85rem;
+}
 /* Projects Section */
 .projects {
     padding: 100px 0;
@@ -194,15 +378,20 @@ nav {
 
 .project-image {
     height: 200px;
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: black;
     font-size: 1.2rem;
     font-weight: 600;
 }
-
+.project-image img {
+    display: block;      /* 이미지 아래 여백 제거 */
+    border-radius: 20px; /* div 모서리와 동일하게 */
+    height: 200px;       /* 높이 고정 */
+    width: auto;         /* 비율 유지 */
+}
 .project-content {
     padding: 2rem;
 }

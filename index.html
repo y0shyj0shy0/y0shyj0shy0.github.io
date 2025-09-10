@@ -13,7 +13,10 @@
             <ul class="nav-links">
                 <li><a href="#home">홈</a></li>
                 <li><a href="#about">소개</a></li>
+                <li><a href="#education">학력/경력</a></li>
+                <li><a href="#achievements">수상/자격증</a></li>
                 <li><a href="#projects">프로젝트</a></li>
+                <li><a href="#researches">논문/특허</a></li>
                 <li><a href="#contact">연락처</a></li>
             </ul>
         </nav>
@@ -58,12 +61,29 @@
                         </div>
                     </div>
                     <div class="about-image">
-                        <img src="./김남규님여권사이즈_저용량.JPG">
+                        <img src="./imgs/profile.JPG">
                     </div>
                 </div>
             </div>
         </section>
-
+        <!-- Education 학력-->
+        <section id="education" class="education">
+            <div class="container">
+                <h2 class="section-title reveal">Education & Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-date">2020 - 2026</div>
+                        <div class="timeline-content">
+                            <h3>컴퓨터공학과 학사 졸업예정</h3>
+                            <h4>창원대학교</h4>
+                            <p>주요 과목: 자료구조, 영상처리, 객체지향프로그래밍, 데이터베이스, 소프트웨어공학</p>
+                            <p>학점: 3.85/4.5</p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
         <!-- Projects -->
         <section id="projects" class="projects">
             <div class="container">
@@ -72,25 +92,7 @@
 
                     <!-- Project 1 -->
                     <div class="project-card reveal">
-                        <div class="project-image">Milimate</div>
-                        <div class="project-content">
-                            <h3>밀리메이트 (Milimate)</h3>
-                            <p>
-                                군 생활을 효율적으로 지원하는 통합 관리 앱.  
-                                QR코드 기반 식사 체크 시스템을 통해 음식물 쓰레기를 줄이고, 식단표 확인 및 PX 인기 품목 조회 기능을 제공.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">React Native</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">MySQL</span>
-                            </div>
-                            <a href="#" class="project-link">프로젝트 보기 →</a>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="project-card reveal">
-                        <div class="project-image">Landslide Prediction</div>
+                        <div class="project-image"><img src="./imgs/landslide.jpg"></div>
                         <div class="project-content">
                             <h3>산사태 예측 모델</h3>
                             <p>
@@ -107,9 +109,9 @@
                         </div>
                     </div>
 
-                    <!-- Project 3 -->
+                    <!-- Project 2 -->
                     <div class="project-card reveal">
-                        <div class="project-image">Risk Detection</div>
+                        <div class="project-image"><img src="./imgs/yolo.png"></div>
                         <div class="project-content">
                             <h3>시각장애인 보행 위험 탐지 시스템</h3>
                             <p>
@@ -125,8 +127,98 @@
                             <a href="#" class="project-link">프로젝트 보기 →</a>
                         </div>
                     </div>
-
+                    <!-- Project 3-->
+                    <div class="project-card reveal">
+                        <div class="project-image"><img src="./imgs/go-around.jpg"></div>
+                        <div class="project-content">
+                            <h3>Go-Around 예측 모델</h3>
+                            <p>
+                                제주공항 1년치 기상 데이터와 항공 데이터를 분석해 Go-Around(복행) 발생 원인 분석
+                                통계적 기법과 AI 모델을 결합해 Go-Around 발생 확률 예측 시스템 개발
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">XGBoost</span>
+                                <span class="tech-tag">AutoEncoder</span>
+                                <span class="tech-tag">Matplotlib</span>
+                                <span class="tech-tag">Z-Test</span>
+                            </div>
+                            <a href="#" class="project-link">프로젝트 보기 →</a>
+                        </div>
+                    </div>
                     <!-- Project 4 -->
+                    <div class="project-card reveal">
+                        <div class="project-image"><img src="./imgs/milimate.PNG"></div>
+                        <div class="project-content">
+                            <h3>밀리메이트 (Milimate)</h3>
+                            <p>
+                                군 생활을 효율적으로 지원하는 통합 관리 앱.  
+                                QR코드 기반 식사 체크 시스템을 통해 음식물 쓰레기를 줄이고, 식단표 확인 및 PX 인기 품목 조회 기능을 제공.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                            <a href="#" class="project-link">프로젝트 보기 →</a>
+                        </div>
+                    </div>
+                    <!-- Project 5-->
+                    <div class="project-card reveal">
+                        <div class="project-image"><img src="./imgs/gyeongnam.PNG"></div>
+                        <div class="project-content">
+                            <h3>경상남도 주요 관광지 추천 시스템</h3>
+                            <p>
+                                경상남도 주요 관광지를 대상으로 계절별 관광객 유형 변화 분석을 수행하고,
+                                이를 바탕으로 추가적인 관광 벨트 제안을 통해 지역 경제 활성화 방안을 도출
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">KoNLPy</span>
+                                <span class="tech-tag">scikit-learn</span>
+                                <span class="tech-tag">Crawling</span>
+                                <span class="tech-tag">Clustering</span>
+                            </div>
+                            <a href="#" class="project-link">프로젝트 보기 →</a>
+                        </div>
+                    </div>
+                    <!-- Project 5-->
+                    <div class="project-card reveal">
+                        <div class="project-image"><img src="./imgs/swdeep.PNG"></div>
+                        <div class="project-content">
+                            <h3>음성 딥페이크 탐지 시스템</h3>
+                            <p>
+                                딥러닝 기술을 활용하여 실제 음성과 AI로 생성된 가짜 음성을 구분하는 탐지 시스템
+                                CQT(Constant-Q Transform) 변환과 YAMNet 모델을 결합하여 높은 정확도의 음성 진위 판별을 수행
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">librosa</span>
+                                <span class="tech-tag">Pytorch</span>
+                                <span class="tech-tag">CQT</span>
+                                <span class="tech-tag">YamNet</span>
+                            </div>
+                            <a href="#" class="project-link">프로젝트 보기 →</a>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="project-card reveal">
+                        <div class="project-image"><img src="./imgs/myboard.png"></div>
+                        <div class="project-content">
+                            <h3>웹 게시판 구현</h3>
+                            <p>
+                                Node.js와 MySQL을 사용하여 프론트엔드부터 백엔드까지 풀스택으로 개발한 웹 게시판.
+                                이를 통해 클라이언트-서버 구조와 관계형 DB를 확실하게 이해함
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C</span>
+                                <span class="tech-tag">Data Structure</span>
+                                <span class="tech-tag">Algorithm</span>
+                            </div>
+                            <a href="#" class="project-link">프로젝트 보기 →</a>
+                        </div>
+                    </div>                    
+                    <!-- Project 5 -->
                     <div class="project-card reveal">
                         <div class="project-image">Terminal Tetris</div>
                         <div class="project-content">
@@ -144,10 +236,103 @@
                         </div>
                     </div>
 
+
+                </div>
+            </div>
+        </section>
+        <!-- 수상/자격증-->
+        <section id="achievements" class="achievements">
+            <div class="container">
+                <div class="achievements-content">
+                    <div class="awards-section">
+                        <h2 class="section-title reveal">Awards</h2>
+                        <div class="awards-grid">
+                            <div class="award-card reveal">
+                                <div class="award-year">2024</div>
+                                <h3>한국정보전자통신기술학회</h3>
+                                <h4>우수논문상</h4>
+                                <p>학술 논문지에 발표된 논문 중 독창성과 접근법 및 응용성이 탁월하여 우수논문상을 수여</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="certifications-section">
+                        <h2 class="section-title reveal">Certifications</h2>
+                        <div class="cert-grid">
+                            <div class="cert-card reveal">
+                                <h3>정보처리기사</h3>
+                                <p class="cert-issuer">한국산업인력공단</p>
+                                <p class="cert-date">2025.09</p>
+                            </div>
+                            
+                            <div class="cert-card reveal">
+                                <h3>토익스피킹 IH(150점)</h3>
+                                <p class="cert-issuer">YBM</p>
+                                <p class="cert-date">2025.03</p>
+                            </div>
+                            <div class="cert-card reveal">
+                                <h3>굴착기운전기능사</h3>
+                                <p class="cert-issuer">한국산업인력공단</p>
+                                <p class="cert-date">2023.02</p>
+                            </div>
+                            <div class="cert-card reveal">
+                                <h3>운전면허 1종 대형</h3>
+                                <p class="cert-issuer">부산지방경찰청</p>
+                                <p class="cert-date">2021.01</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Research outcomes -->
+        <section id="researches" class="researches">
+            <div class="container">
+                <h2 class="section-title reveal">논문</h2>
+                <div class="projects-grid">
+                    <!-- 논문 1 -->
+                    <div class="project-card reveal">
+                        <div class="project-image"><img src="./imgs/yolo_research.PNG"></div>
+                        <div class="project-content">
+                            <h3>GloSea6에서 YOLOv8을 활용한 시각장애인 보행자 위험 감지 기법</h3>
+                            <p>
+                                YOLOv8 모델과 Kalman Filter, MiDaS 모델을 통해 보다 정확한 객체 탐지 및 추적 가능
+                                이를 통해 시각장애인에게 보다 더 신뢰성 있는 위험 감지를 제공할 수 있음
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">YOLOv8</span>
+                                <span class="tech-tag">Object Detection</span>
+                                <span class="tech-tag">Object Tracking</span>
+                                <span class="tech-tag">Depth Estimation</span>
+                            </div>
+                            <a href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003159703" target="_blank" class="project-link">논문 보기 →</a>
+                        </div>
+                    </div>
+                    <!-- 논문 2-->
+                    <div class="project-card reveal">
+                        <div class="project-image"><img src="./imgs/Go-around_research.PNG"></div>
+                        <div class="project-content">
+                            <h3>제주공항 공항·기상 데이터 기반 Go-Around 예측 모델 연구</h3>
+                            <p>
+                                제주공항 1년치 기상 데이터와 항공 데이터를 분석해 Go-Around(복행) 발생 원인 분석
+                                통계적 기법과 AI 모델을 결합해 Go-Around 발생 확률 예측 시스템 개발
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">XGBoost</span>
+                                <span class="tech-tag">AutoEncoder</span>
+                                <span class="tech-tag">Matplotlib</span>
+                                <span class="tech-tag">Z-Test</span>
+                            </div>
+                            <a href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003239448" target="_blank" class="project-link">논문 보기 →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Contact -->
         <section id="contact" class="contact">
             <div class="container">
