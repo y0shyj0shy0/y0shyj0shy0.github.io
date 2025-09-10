@@ -150,6 +150,7 @@ nav {
     border-radius: 20px;
     display: inline-block; /* div 크기를 내용물(이미지)에 맞춤 */
     overflow: hidden;
+    width: 300;
 }
 
 .about-image img {
