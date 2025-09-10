@@ -146,14 +146,18 @@ nav {
 }
 
 .about-image {
-    display: inline-block; /* div 크기를 내용물에 맞춤 */
     background: linear-gradient(45deg, #667eea, #764ba2);
     border-radius: 20px;
-    padding: 0; /* 여백 제거 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* 이미지 벗어남 숨김 */
 }
+
 .about-image img {
-    display: block; /* 이미지 아래 여백 제거 */
-    border-radius: 20px; /* div 모서리와 동일하게 */
+    width: 100%;  /* div 너비에 맞춤 */
+    height: auto; /* 비율 유지 */
+    display: block;
 }
 
 /* Projects Section */
